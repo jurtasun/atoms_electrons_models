@@ -2,7 +2,7 @@
 \section{The Classical Collapse: An Explicit Calculation}
 \label{section:collapse}
 
-We present the calculation in full because the philosophical argument of Chapter [...] depends on it: the failure is not a rough estimate but an exact consequence of three internally consistent and independently verified physical laws.
+The failure of the planetary models of the atom is a well known and extensively discussed example. We present the calculation in full because the philosophical argument of Chapter [...] depends on it: the failure is not a rough estimate but an exact consequence of three internally consistent and independently verified physical laws.
 
 % Subsection ..........................................................................................................
 \subsection{The Three Ingredients and Their Sources}
@@ -10,31 +10,37 @@ We present the calculation in full because the philosophical argument of Chapter
 
 \textbf{Centripetal acceleration (Newton, 1687)}
 
-Newton's \emph{Principia Mathematica} \cite{newton_1687_principia} establishes that for uniform circular motion of radius $r$ and speed $v$, differentiating the position vector
-$\vec{r}(t) = r(\cos\omega t,\,\sin\omega t)$
-twice with $\omega = v/r$ gives
+\medskip
+
+Newton's \emph{Principia Mathematica} \cite{newton_1687_principia} establishes that for uniform circular motion of radius $r$ and speed $v$, differentiating the position vector $\vec{r}(t) = r(\cos\omega t,\,\sin\omega t)$ twice with $\omega = v/r$ gives
 \begin{equation}
-  \ddot{\vec{r}} = -\omega^2\,\vec{r}
-  \quad\Longrightarrow\quad
-  \boxed{a = \frac{v^2}{r}},
+  \ddot{\vec{r}} = -\omega^2\,\vec{r} \quad\Longrightarrow\quad \boxed{a = \frac{v^2}{r}} \; ,
   \label{eq:centripetal}
 \end{equation}
 directed toward the centre. No approximation is involved.
 
+\medskip
+
 \textbf{Coulomb's law (Coulomb, 1785)}
 
-Measured by torsion balance in 1785 \cite{coulomb_1785_electricity}, the force between two point charges $q_1$ and $q_2$ separated by distance $r$ is
+\medskip
+
+Measured by torsion balance in 1785 \cite{coulomb_1785_electricity}, the force arising between two point charges $q_1$ and $q_2$ separated by distance $r$ is
 \begin{equation}
-  \boxed{F = \frac{1}{4\pi\epsilon_0}\frac{q_1\,q_2}{r^2}},
+  \boxed{F = \frac{1}{4\pi\epsilon_0}\frac{q_1\,q_2}{r^2}} \; ,
   \label{eq:coulomb}
 \end{equation}
-attractive for opposite charges. The constant $\epsilon_0$ is Maxwell's (1865); the inverse-square dependence is Coulomb's direct experimental result.
+attractive for opposite charges. The constant $\epsilon_0$ would be added by Maxwell's 1865; the inverse-square dependence is Coulomb's direct experimental result.
+
+\medskip
 
 \textbf{Larmor radiation formula (Larmor, 1897)}
 
+\medskip
+
 From Maxwell's equations, the electric field radiated by an accelerated charge falls as $1/r$, so the Poynting flux integrated over a distant sphere yields a finite radiated power \cite{larmor_1897_radiation}:
 \begin{equation}
-  \boxed{P = \frac{e^2\,a^2}{6\pi\epsilon_0\,c^3}}.
+  \boxed{P = \frac{e^2\,a^2}{6\pi\epsilon_0\,c^3}} \; .
   \label{eq:larmor}
 \end{equation}
 The dependence on $a^2$ follows because the radiated field is linear in $a$, and power is quadratic in the field amplitude.
@@ -43,18 +49,20 @@ The dependence on $a^2$ follows because the radiated field is linear in $a$, and
 \subsection{The Differential Equation for \texorpdfstring{$r(t)$}{r(t)}}
 \label{subsection:ode}
 
-Setting Coulomb's force equal to the centripetal requirement for the electron (mass $m_e$, charge $e$):
+Setting Coulomb's force equal to the centripetal requirement for the electron (mass $m_e$, charge $e$) one obtains:
 \begin{equation}
-  \frac{e^2}{4\pi\epsilon_0\,r^2} = \frac{m_e\,v^2}{r} \implies v^2 = \frac{e^2}{4\pi\epsilon_0\,m_e\,r}.
+  \frac{e^2}{4\pi\epsilon_0\,r^2} = \frac{m_e\,v^2}{r} \implies v^2 = \frac{e^2}{4\pi\epsilon_0\,m_e\,r} \; .
   \label{eq:virial-v}
 \end{equation}
 
-The total mechanical energy is
+The total mechanical energy is then:
 \begin{equation}
-  E = \frac{1}{2}m_e v^2 - \frac{e^2}{4\pi\epsilon_0\,r} = -\frac{e^2}{8\pi\epsilon_0\,r},
+  E = \frac{1}{2}m_e v^2 - \frac{e^2}{4\pi\epsilon_0\,r} = -\frac{e^2}{8\pi\epsilon_0\,r} \; ,
   \label{eq:energy}
 \end{equation}
 where the virial theorem ensures $E_{\mathrm{kin}} = -E/2$.
+
+\medskip
 
 As the electron loses energy by radiation, $E$ decreases and $r$ decreases monotonically. Substituting $a = e^2/(4\pi\epsilon_0 m_e r^2)$ into~(\ref{eq:larmor}):
 \begin{equation}
@@ -62,15 +70,14 @@ As the electron loses energy by radiation, $E$ decreases and $r$ decreases monot
   \label{eq:power-r}
 \end{equation}
 
-Equating $\dot{E} = -P$ and differentiating~(\ref{eq:energy}):
+Equating total energy $\dot{E} = -P$ and differentiating~(\ref{eq:energy}) one obtains:
 \begin{equation}
-  \frac{e^2}{8\pi\epsilon_0\,r^2}\,\dot{r}
-  = -\frac{e^6}{12\pi^3\epsilon_0^3\,m_e^2\,c^3\,r^4}.
+  \frac{e^2}{8\pi\epsilon_0\,r^2}\,\dot{r} = -\frac{e^6}{12\pi^3\epsilon_0^3\,m_e^2\,c^3\,r^4} \; .
 \end{equation}
 
 Rearranging:
 \begin{equation}
-  r^2\,\mathrm{d}r = -\frac{2e^4}{3\,(4\pi\epsilon_0)^2\,m_e^2\,c^3}\,\mathrm{d}t \;\equiv\; -C\,\mathrm{d}t.
+  r^2\,\mathrm{d}r = -\frac{2e^4}{3\,(4\pi\epsilon_0)^2\,m_e^2\,c^3}\,\mathrm{d}t \;\equiv\; -C\,\mathrm{d}t \; .
   \label{eq:ode}
 \end{equation}
 
@@ -78,22 +85,18 @@ Rearranging:
 \subsection{Integration and Result}
 \label{subsection:result}
 
-Integrating~(\ref{eq:ode}) from $r_0 = a_0$ (the Bohr radius,
-$a_0 \approx 0.529\,\text{\AA}$) to $r = 0$:
+Integrating~(\ref{eq:ode}) from $r_0 = a_0$ (the Bohr radius, $a_0 \approx 0.529\,\text{\AA}$) to $r = 0$:
 \begin{equation}
-  \int_{a_0}^{0} r^2\,\mathrm{d}r = -C\,t_{\mathrm{collapse}}
-  \implies
-  \frac{a_0^3}{3} = C\,t_{\mathrm{collapse}},
+  \int_{a_0}^{0} r^2\,\mathrm{d}r = -C\,t_{\mathrm{collapse}} \implies \frac{a_0^3}{3} = C\,t_{\mathrm{collapse}},
 \end{equation}
-giving
+
+giving the final results
 \begin{equation}
-  \boxed{
-    t_{\mathrm{collapse}}
-    = \frac{(4\pi\epsilon_0)^2\,m_e^2\,c^3\,a_0^3}{4\,e^4}
-    \approx 1.6\times10^{-11}\,\mathrm{s}.
-  }
+  \boxed{t_{\mathrm{collapse}} = \frac{(4\pi\epsilon_0)^2\,m_e^2\,c^3\,a_0^3}{4\,e^4} \approx 1.6\times10^{-11}\,\mathrm{s} \; .}
   \label{eq:tcollapse}
 \end{equation}
+
+Sixteen picoseconds. This is not an order-of-magnitude estimate; it is the exact result of integrating three independently verified and internally consistent physical laws. The calculation is impeccable, yet the conclusion is empirically false. That tension is the starting point of everything that follows.
 
 \begin{table}[h]
   \centering
@@ -111,5 +114,3 @@ giving
   \caption{Physical constants used in the collapse calculation.}
   \label{tab:constants}
 \end{table}
-
-Sixteen picoseconds. This is not an order-of-magnitude estimate; it is the exact result of integrating three independently verified and internally consistent physical laws. The calculation is impeccable. The conclusion is empirically false. That tension is the starting point of everything that follows.
