@@ -32,6 +32,43 @@ I.~Lakatos.
 \newblock {\em The Methodology of Scientific Research Programmes}.
 \newblock Cambridge University Press, Cambridge, 1978.
 
+\bibitem{rayleigh_1900_radiation}
+Lord Rayleigh.
+\newblock Remarks upon the law of complete radiation.
+\newblock {\em Philosophical Magazine}, 49:539--540, 1900.
+
+\bibitem{jeans_1905_partition}
+J.~H. Jeans.
+\newblock On the partition of energy between matter and aether.
+\newblock {\em Philosophical Magazine}, 10:91--98, 1905.
+
+\bibitem{wien_1896_radiation}
+W.~Wien.
+\newblock Ueber die energievertheilung im emissionsspectrum eines schwarzen
+  k{\"o}rpers.
+\newblock {\em Annalen der Physik}, 294(8):662--669, 1896.
+
+\bibitem{planck_1900_radiation}
+M.~Planck.
+\newblock {\"U}ber eine verbesserung der {W}ien'schen {S}pectralgleichung.
+\newblock {\em Verhandlungen der Deutschen Physikalischen Gesellschaft},
+  2:202--204, 1900.
+
+\bibitem{cartwright_1983_laws}
+N.~Cartwright.
+\newblock {\em How the Laws of Physics Lie}.
+\newblock Oxford University Press, Oxford, 1983.
+
+\bibitem{giere_1988_science}
+R.~N. Giere.
+\newblock {\em Science Without Laws}.
+\newblock University of Chicago Press, Chicago, 1988.
+
+\bibitem{chakravartty_2007_metaphysics}
+A.~Chakravartty.
+\newblock {\em A Metaphysics for Scientific Realism: Knowing the Unobservable}.
+\newblock Cambridge University Press, Cambridge, 2007.
+
 \bibitem{bohr_1913_constitution}
 N.~Bohr.
 \newblock On the constitution of atoms and molecules.
@@ -74,6 +111,11 @@ R.~P. Feynman.
 \newblock {\em {QED}: The Strange Theory of Light and Matter}.
 \newblock Princeton University Press, Princeton, 1985.
 
+\bibitem{weinberg_1979_eft}
+S.~Weinberg.
+\newblock Phenomenological lagrangians.
+\newblock {\em Physica A}, 96(1--2):327--340, 1979.
+
 \bibitem{heisenberg_1958_physics}
 W.~Heisenberg.
 \newblock {\em Physics and Philosophy: The Revolution in Modern Science}.
@@ -84,6 +126,16 @@ Aristotle.
 \newblock {\em Metaphysics}.
 \newblock Clarendon Press, Oxford, 1924.
 \newblock Translated by W.~D. Ross.
+
+\bibitem{zubiri_1962_esencia}
+X.~Zubiri.
+\newblock {\em Sobre la esencia}.
+\newblock Sociedad de Estudios y Publicaciones, Madrid, 1962.
+
+\bibitem{zubiri_1980_inteligencia}
+X.~Zubiri.
+\newblock {\em Inteligencia sentiente}.
+\newblock Alianza Editorial, Madrid, 1980.
 
 \bibitem{bell_1964_epr}
 J.~S. Bell.
@@ -118,6 +170,17 @@ D.~Bohm.
   ``hidden'' variables.
 \newblock {\em Physical Review}, 85(2):166--193, 1952.
 
+\bibitem{wigner_1961_friend}
+E.~P. Wigner.
+\newblock Remarks on the mind-body question.
+\newblock In I.~J. Good, editor, {\em The Scientist Speculates}, pages
+  284--302. Heinemann, London, 1961.
+
+\bibitem{frauchiger_2018_quantum}
+D.~Frauchiger and R.~Renner.
+\newblock Quantum theory cannot consistently describe the use of itself.
+\newblock {\em Nature Communications}, 9:3711, 2018.
+
 \bibitem{margenau_1954_interpretations}
 H.~Margenau.
 \newblock Advantages and disadvantages of various interpretations of the
@@ -128,6 +191,12 @@ H.~Margenau.
 M.~Bunge.
 \newblock {\em Ontology {II}: {A} World of Systems}.
 \newblock D.~Reidel, Dordrecht, 1979.
+
+\bibitem{barandes_2023_stochastic}
+J.~A. Barandes.
+\newblock The stochastic-quantum correspondence.
+\newblock arXiv preprint arXiv:2302.10778, 2023.
+\newblock Preprint, under review.
 
 \bibitem{ladyman_2007_everything}
 J.~Ladyman and D.~Ross.
@@ -149,5 +218,45 @@ S.~French and M.~Redhead.
 M.~Esfeld and D.-A. Deckert.
 \newblock {\em A Minimalist Ontology of the Natural World}.
 \newblock Routledge, New York, 2017.
+
+\bibitem{einstein_1935_epr}
+A.~Einstein, B.~Podolsky, and N.~Rosen.
+\newblock Can quantum-mechanical description of physical reality be considered
+  complete?
+\newblock {\em Physical Review}, 47(10):777--780, 1935.
+
+\bibitem{clauser_1969_chsh}
+J.~F. Clauser, M.~A. Horne, A.~Shimony, and R.~A. Holt.
+\newblock Proposed experiment to test local hidden-variable theories.
+\newblock {\em Physical Review Letters}, 23(15):880--884, 1969.
+
+\bibitem{tsirelson_1980_bound}
+B.~S. Tsirelson.
+\newblock Quantum generalizations of {B}ell's inequality.
+\newblock {\em Letters in Mathematical Physics}, 4(2):93--100, 1980.
+
+\bibitem{popescu_1994_pr}
+S.~Popescu and D.~Rohrlich.
+\newblock Quantum nonlocality as an axiom.
+\newblock {\em Foundations of Physics}, 24(3):379--385, 1994.
+
+\bibitem{brassard_2006_limits}
+G.~Brassard, H.~Buhrman, N.~Linden, A.~A. M{\'e}thot, A.~Tapp, and F.~Unger.
+\newblock Limit on nonlocality in any world in which communication complexity
+  is not trivial.
+\newblock {\em Physical Review Letters}, 96(25):250401, 2006.
+
+\bibitem{pawlowski_2009_information}
+M.~Paw{\l}owski, T.~Paterek, D.~Kaszlikowski, V.~Scarani, A.~Winter, and
+  M.~{\.Z}ukowski.
+\newblock Information causality as a physical principle.
+\newblock {\em Nature}, 461:1101--1104, 2009.
+
+\bibitem{fritz_2013_local}
+T.~Fritz, A.~B. Sainz, R.~Augusiak, J.~B. Brask, R.~Chaves, A.~Leverrier, and
+  A.~Ac{\'i}n.
+\newblock Local orthogonality as a multipartite principle for quantum
+  correlations.
+\newblock {\em Nature Communications}, 4:2263, 2013.
 
 \end{thebibliography}

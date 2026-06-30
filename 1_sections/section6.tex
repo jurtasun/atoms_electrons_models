@@ -1,0 +1,262 @@
+% To:
+\section{Appendix: Bell Inequalities and the Tsirelson Bound}
+\label{app:bell}
+
+This note collects the mathematical background behind the claims made
+in Sections~4 and~5 regarding Bell's theorem and its consequences.
+It is intended as a self-contained reference for readers unfamiliar
+with the formalism.
+
+%% -----------------------------------------------------------
+\subsection*{1. The EPR argument and the problem of correlations}
+%% -----------------------------------------------------------
+
+Einstein, Podolsky, and Rosen argued in 1935 \cite{einstein_1935_epr}
+that if two spatially separated particles produce perfectly
+anti-correlated measurement outcomes without any possible causal
+connection between the measurements, then the outcome of each
+measurement must have been determined in advance by some property
+carried locally by each particle---a \emph{hidden variable}.
+Quantum mechanics, they argued, is incomplete because it does not
+specify this variable.
+
+Bell \cite{bell_1964_epr} converted this from a philosophical dispute
+into a precise mathematical question: what statistical correlations
+are compatible with \emph{any} local hidden-variable theory,
+regardless of its internal mechanism?
+
+%% -----------------------------------------------------------
+\subsection*{2. Bell's original inequality and Pearson correlations}
+%% -----------------------------------------------------------
+
+Suppose two particles, $A$ and $B$, are produced together and travel
+to separate detectors.
+Each detector can be oriented in one of several directions, and each
+measurement yields an outcome $\pm1$.
+Let $\lambda$ be a hidden variable (or set of variables) distributed
+according to some probability density $\rho(\lambda)$, unknown but
+fixed at the moment the particles are produced.
+The local hidden-variable assumption is that the outcome at $A$
+depends only on the local setting $a$ and on $\lambda$---not on what
+$B$ does---and symmetrically for $B$:
+
+\begin{equation}
+  A = A(a,\lambda) \in \{-1,+1\}, \qquad
+  B = B(b,\lambda) \in \{-1,+1\}.
+  \label{eq:lhv}
+\end{equation}
+
+The correlation between the outcomes at settings $a$ and $b$ is then
+the \emph{Pearson correlation coefficient} of the two $\pm1$ random
+variables $A$ and $B$:
+
+\begin{equation}
+  E(a,b) = \int \rho(\lambda)\, A(a,\lambda)\, B(b,\lambda)\,
+            \mathrm{d}\lambda.
+  \label{eq:pearson}
+\end{equation}
+
+This is identical to the standard Pearson product-moment correlation
+$r_{AB} = \langle AB \rangle / (\sigma_A \sigma_B)$, which here
+reduces to $\langle AB \rangle$ because $\sigma_A = \sigma_B = 1$ for
+$\pm1$ variables.
+$E(a,b) = +1$ means perfect agreement, $E(a,b) = -1$ means perfect
+anti-correlation, and $E(a,b) = 0$ means statistical independence.
+
+Bell showed that for any three measurement directions $a$, $b$, $c$,
+the correlations defined by~(\ref{eq:pearson}) must satisfy:
+
+\begin{equation}
+  |E(a,b) - E(a,c)| \leq 1 + E(b,c).
+  \label{eq:bell-supp}
+\end{equation}
+
+The proof is pure arithmetic: since $A(b,\lambda)B(b,\lambda) = \pm1$,
+one has $|A(a,\lambda)B(b,\lambda) - A(a,\lambda)B(c,\lambda)|
+\leq 1 - A(b,\lambda)B(b,\lambda)A(b,\lambda)B(c,\lambda)$
+pointwise in $\lambda$, and integrating over $\rho(\lambda)$ yields
+(\ref{eq:bell-supp}).
+No assumption about quantum mechanics enters---the inequality holds
+for \emph{any} distribution $\rho(\lambda)$ and any
+$\pm1$-valued functions $A(a,\lambda)$, $B(b,\lambda)$.
+
+%% -----------------------------------------------------------
+\subsection*{3. The CHSH inequality}
+%% -----------------------------------------------------------
+
+Clauser, Horne, Shimony, and Holt (1969) \cite{clauser_1969_chsh}
+reformulated Bell's result in a form better suited to real experiments,
+which suffer from detector inefficiencies and finite statistics.
+The four authors' initials give the inequality its name: \textbf{CHSH}.
+
+The setup uses two settings per detector---$a$ and $a'$ for particle
+$A$, and $b$ and $b'$ for particle $B$---yielding four correlation
+functions.
+The CHSH quantity $S$ is defined as:
+
+\begin{equation}
+  S = E(a,b) - E(a,b') + E(a',b) + E(a',b').
+  \label{eq:S}
+\end{equation}
+
+The letter $S$ stands for the \emph{sum} (or \emph{score}) of these
+four Pearson correlations, combined with a specific sign pattern
+chosen so that any local hidden-variable model is forced into an
+algebraic contradiction.
+The CHSH inequality states:
+
+\begin{equation}
+  |S| \leq 2.
+  \label{eq:chsh-supp}
+\end{equation}
+
+The proof is again arithmetic: since each
+$A(\cdot,\lambda), A'(\cdot,\lambda), B(\cdot,\lambda),
+B'(\cdot,\lambda) \in \{-1,+1\}$, the combination
+$AB - AB' + A'B + A'B' = A(B-B') + A'(B+B')$ takes values in which
+one of $(B - B')$ and $(B + B')$ is always zero and the other is
+$\pm2$, so the whole expression is $\pm2$ pointwise in $\lambda$, and
+therefore $|S| \leq 2$ after integrating over $\rho(\lambda)$.
+
+%% -----------------------------------------------------------
+\subsection*{4. Quantum mechanics violates the CHSH bound}
+%% -----------------------------------------------------------
+
+For the spin-singlet state
+$|\Psi^-\rangle = \frac{1}{\sqrt{2}}
+(|\uparrow\rangle_A|\downarrow\rangle_B
+- |\downarrow\rangle_A|\uparrow\rangle_B)$,
+quantum mechanics predicts:
+
+\begin{equation}
+  E_{\mathrm{QM}}(a,b) = -\cos(\theta_{ab}),
+  \label{eq:eqm}
+\end{equation}
+
+where $\theta_{ab}$ is the angle between the measurement directions
+$a$ and $b$ in the Bloch sphere.
+Note that (\ref{eq:eqm}) is still a Pearson correlation between
+$\pm1$ outcomes---the quantum calculation gives the same object as
+(\ref{eq:pearson}), it just predicts a \emph{different} value for it
+than any local hidden-variable model can.
+
+Choosing the optimal angles
+$a = 0\circ$, $a' = 90\circ$, $b = 45\circ$, $b' = 135\circ$
+(so that each pair of settings subtends $45\circ$):
+
+\begin{equation}
+  E(a,b) = E(a',b) = E(a',b') = -\cos 45\circ = -\tfrac{1}{\sqrt{2}},
+  \qquad
+  E(a,b') = -\cos 135\circ = +\tfrac{1}{\sqrt{2}},
+\end{equation}
+
+giving:
+
+\begin{equation}
+  S_{\mathrm{QM}}
+  = -\tfrac{1}{\sqrt{2}} - \tfrac{1}{\sqrt{2}}
+    - \tfrac{1}{\sqrt{2}} - \tfrac{1}{\sqrt{2}}
+  = -2\sqrt{2} \approx -2.828.
+\end{equation}
+
+The magnitude $|S_{\mathrm{QM}}| = 2\sqrt{2} > 2$ violates the CHSH
+bound~(\ref{eq:chsh-supp}).
+This violation was confirmed experimentally by Aspect, Grangier, and
+Roger in 1982 \cite{aspect_1982_bell}, and without loopholes by
+Hensen et al.\ in 2015 \cite{hensen_2015_loophole}.
+
+%% -----------------------------------------------------------
+\subsection*{5. The Tsirelson bound: why not stronger?}
+%% -----------------------------------------------------------
+
+The CHSH bound for classical correlations is $|S| \leq 2$.
+Quantum mechanics reaches $|S| = 2\sqrt{2} \approx 2.83$.
+But why does quantum mechanics stop there?
+Logically, $|S|$ could be as large as $4$ (if all four Pearson
+correlations had magnitude 1 simultaneously).
+Is there a deeper reason why the quantum world is \emph{more}
+non-local than any classical model but \emph{less} non-local than it
+could logically be?
+
+Boris Tsirelson (also transliterated Cirel'son) answered this in
+1980 \cite{tsirelson_1980_bound}: \emph{$2\sqrt{2}$ is the maximum
+value of $|S|$ achievable by any quantum state and any quantum
+measurements, in any Hilbert space of any dimension.}
+This is the \textbf{Tsirelson bound}.
+
+To see intuitively why it is $2\sqrt{2}$ and not $4$: the four
+Pearson correlations $E(a,b)$, $E(a,b')$, $E(a',b)$, $E(a',b')$
+cannot all equal $\pm1$ simultaneously in quantum mechanics, because
+the measurements do not commute.
+Choosing $a$ and $b$ to maximise $E(a,b)$ forces the other
+correlations into a configuration that cannot simultaneously be
+maximised---the non-commutativity of quantum observables introduces a
+geometric constraint that limits the total score $S$.
+
+The algebraic proof uses the operator version of $S$:
+\begin{equation}
+  \hat{S} = \hat{A}\otimes(\hat{B}+\hat{B}')
+            + \hat{A}'\otimes(\hat{B}-\hat{B}'),
+\end{equation}
+where $\hat{A}, \hat{A}', \hat{B}, \hat{B}'$ are observables with
+eigenvalues $\pm1$ (Hermitian operators with $\hat{A}^2 = \mathbb{1}$,
+etc.).
+Computing $\hat{S}^2$ and using $\hat{A}^2 = \hat{A}'^2 =
+\hat{B}^2 = \hat{B}'^2 = \mathbb{1}$:
+\begin{equation}
+  \hat{S}^2 = 4\,\mathbb{1}
+              + [\hat{A},\hat{A}']\otimes[\hat{B},\hat{B}'].
+  \label{eq:S2}
+\end{equation}
+The operator norm of a commutator $[\hat{X},\hat{Y}]$ for $\pm1$
+observables satisfies $\|[\hat{X},\hat{Y}]\| \leq 2$, so
+$\|\hat{S}^2\| \leq 4 + 4 = 8$, giving $\|\hat{S}\| \leq 2\sqrt{2}$.
+The bound is tight: the singlet state with $45\circ$ settings achieves it
+exactly.
+
+%% -----------------------------------------------------------
+\subsection*{6. The intermediate bound and its philosophical meaning}
+%% -----------------------------------------------------------
+
+The existence of an intermediate bound---classical $\leq 2$, quantum
+$\leq 2\sqrt{2}$, logical maximum $= 4$---is not an accident, and its
+philosophical significance goes beyond confirming quantum mechanics.
+
+Popescu and Rohrlich noted in 1994 \cite{popescu_1994_pr} that one
+can define hypothetical theories, now called \emph{PR-boxes}, that
+respect the no-signalling principle (no faster-than-light
+communication) but saturate $|S| = 4$.
+Such theories are logically consistent and non-signalling, yet they
+would allow correlations far stronger than anything quantum mechanics
+predicts.
+The fact that nature chooses $2\sqrt{2}$, and not $4$, is therefore
+a \emph{non-trivial physical fact} that is not explained by
+no-signalling alone.
+Why this particular number?
+
+Several research programmes have tried to derive $2\sqrt{2}$ from
+information-theoretic principles---non-trivial communication
+complexity \cite{brassard_2006_limits}, information causality
+\cite{pawlowski_2009_information}, and local orthogonality
+\cite{fritz_2013_local}---but no single principle has been universally
+accepted as the explanation.
+
+For our purposes, this is directly relevant to the potentiality
+reading defended in Section~5.
+The Tsirelson bound shows that the joint potentialities encoded in
+the quantum state are not arbitrary: they obey a precise algebraic
+structure (the Hilbert space formalism, and specifically the
+constraint~(\ref{eq:S2}) on operator norms) that limits
+\emph{how strongly} the potentialities of two entangled systems can
+be correlated.
+The entanglement is not a free, unlimited non-local resource---it is
+a structured form of joint potentiality, constrained by the algebra
+of quantum observables.
+This is consistent with potentiality realism: the potentialities are
+\emph{real} (they exceed classical bounds), but they are
+\emph{structured} (they obey the Tsirelson bound rather than the
+logical maximum).
+The gap between $2\sqrt{2}$ and $4$ is, in this sense, a quantitative
+signature of the ontological structure of quantum potentiality---a
+structure that neither classical ontology nor pure logic would have
+predicted, and that remains only partially understood.
