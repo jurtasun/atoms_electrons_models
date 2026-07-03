@@ -1,60 +1,58 @@
 % Section .............................................................................................................
-\section{Bohr's Provisional Resolution and the Persistence of the Problem}
+\section{Bohr's Provisional Solution and the Persistence of the Problem}
 \label{section:bohr}
 
 % Subsection ..........................................................................................................
 \subsection{The 1913 Postulates as Ontological Stipulation}
 
-Bohr's response in 1913 was philosophically unusual in its candour \cite{bohr_1913_constitution}. He did not attempt to repair the classical ontology. He declared classical electrodynamics inapplicable to intra-atomic orbits and introduced quantised stationary states as irreducible postulates: the electron in a stationary state does not radiate, not because some mechanism suppresses radiation, but because the very concept of radiating simply does not apply to that state.
+Bohr's response in 1913 was philosophically unusual in its candour \cite{bohr_1913_constitution}. He did not attempt to repair the classical ontology. He declared classical electrodynamics inapplicable to intra-atomic orbits and introduced quantised stationary states as irreducible postulates: the electron in a stationary state does not radiate, not because some mechanism suppresses radiation, but because the very concept of radiating \textit{simply does not apply to that state}.
 
 \medskip
 
 This is an ontological statement, not a dynamical explanation. Bohr acknowledged as much, and indeed he described his postulates as provisional, awaiting a deeper theory. The immediate success was spectacular. The energy levels
 \begin{equation}
-  E_n = -\frac{m_e e^4}{2\hbar^2}\cdot\frac{1}{n^2} = -\frac{13.6\,\mathrm{eV}}{n^2}, \qquad n = 1, 2, 3, \ldots
+  E_n = -\frac{m_e e^4}{2\hbar^2}\cdot\frac{1}{n^2} = -\frac{13.6\,\mathrm{eV}}{n^2} \; , \qquad n = 1, 2, 3, \ldots
   \label{eq:bohr-levels}
 \end{equation}
 
 reproduce the Balmer series \cite{balmer_1885_spectrallinien} and the full Rydberg formula \cite{rydberg_1888_linespectra}, with the Rydberg constant now derived rather than fitted:
 \begin{equation}
-  R_H = \frac{m_e e^4}{4\pi\hbar^3 c} \approx 1.097\times10^7\,\mathrm{m}^{-1}.
+  R_H = \frac{m_e e^4}{4\pi\hbar^3 c} \approx 1.097\times10^7\,\mathrm{m}^{-1} \; ,
 \end{equation}
 
 % Replace with:
-with the Rydberg constant now derived from first principles rather than fitted empirically---a numerical agreement so precise it left no doubt that the quantisation condition was capturing something real, even without ontological justification.
+a numerical agreement so precise it left no doubt that the quantisation condition was capturing something real, even without ontological justification.
 
 \medskip
 
 The precision was stunning. Yet, the ontological justification was absent.
 
 % Subsection ..........................................................................................................
-\subsection{Quantum Mechanics: Relocation, Not Dissolution}
+\subsection{Quantum Mechanics: The problem remains}
 
-Full quantum mechanics relocates rather than dissolves the problem. In the Schr\"{o}dinger picture, the ground-state electron occupies the state $\psi_{1s}(r) \propto e^{-r/a_0}$, spherically symmetric. There is no definite orbit, no classical centripetal acceleration, and therefore no Larmor radiation. Stability is explained: the ground state is the lowest eigenvalue of the Hamiltonian $\hat{H} = \hat{p}^2/2m_e - e^2/4\pi\epsilon_0 r$, and there is no lower state to decay into.
+Full quantum mechanics relocates rather than dissolves the problem. In the Schr\"{o}dinger picture, the ground-state electron occupies the state $\psi_{1s}(r) \propto e^{-r/a_0}$, spherically symmetric. $\psi(x)$ represents a probability density, hence there is no definite orbit, no classical centripetal acceleration, and therefore no Larmor radiation. Stability is explained: the ground state is the lowest eigenvalue of the Hamiltonian $\hat{H} = \hat{p}^2/2m_e - e^2/4\pi\epsilon_0 r$, and there is no lower state to decay into.
 
 \medskip
 
 Quantum electrodynamics (QED) goes further, correctly computing excited-state lifetimes, the Lamb shift ($\sim$1057\,MHz for the $2s$--$2p_{1/2}$ splitting, measured by Lamb and Retherford in 1947 \cite{lamb_1947_finestructure}), and spontaneous emission rates at parts-per-billion precision.
 
-% Subsection ..........................................................................................................
-\subsection{The Tail That Remains Open}
+\medskip
 
 Yet the problem has a residue. The self-energy of the electron in its own electromagnetic field has no fully satisfactory formulation. The Abraham--Lorentz equation \cite{abraham_1903_dynamik, lorentz_1904_electromagnetic, dirac_1938_radiating},
 \begin{equation}
   m_e \dot{v} = F_{\mathrm{ext}} + \frac{e^2}{6\pi\epsilon_0 c^3}\ddot{v},
   \label{eq:AL}
 \end{equation}
-admits \emph{runaway solutions} (acceleration growing exponentially without external force) and \emph{pre-acceleration solutions} (particle responds before the force arrives, violating causality). In QED these pathologies are controlled by renormalisation, which works numerically with extraordinary precision but which Dirac regarded as a fundamental logical inconsistency \cite{dirac_1938_radiating} and Feynman called sweeping the problem under the rug with an elegant technique \cite{feynman_1985_qed}.
-
-The ontological question Bohr implicitly raised in 1913---what \emph{kind of thing} is an electron, considered as both a quantum object and a source of its own field?---remains incompletely answered. Each theoretical layer has provided a more adequate partial ontology. None has provided a complete one.
+admits \textit{runaway solutions} (acceleration growing exponentially without external force) and \textit{pre-acceleration solutions} (particle responds before the force arrives, violating causality). In QED these pathologies are controlled by renormalisation, which works numerically with extraordinary precision but which Dirac regarded as a fundamental logical inconsistency \cite{dirac_1938_radiating} and Feynman called sweeping the problem under the rug with an elegant technique \cite{feynman_1985_qed}.
 
 \medskip
 
-\TODO{Consider a paragraph on effective field theory (Weinberg, Wilson): EFT explicitly embraces ontological incompleteness at each scale. That may be a more honest framing than ``the problem is unsolved.''}
+The ontological question Bohr implicitly raised in 1913---what \textit{kind of thing} is an electron, considered as both a quantum object and a source of its own field?---remains incompletely answered. Each theoretical layer has provided a more adequate partial ontology. None has provided a complete one.
 
-% -----------------------------------------------------------
-% Replaces the \TODO block
-% -----------------------------------------------------------
+\medskip
 
-This situation is perhaps better understood through the lens of effective field theory \cite{weinberg_1979_eft}: rather than a deficiency awaiting resolution, ontological incompleteness at each energy scale is a permanent structural feature of physical
-theorising. Each theory carries a partial ontology adequate to its domain; what lies beyond is encoded in the theory's own breakdown, not in a completed picture waiting to be found.
+This situation is perhaps better understood through the lens of effective field theory \cite{weinberg_1979_eft}: rather than a deficiency awaiting resolution, ontological incompleteness at each energy scale is a permanent structural feature of physical theorising. Each theory carries a partial ontology adequate to its domain; what lies beyond is encoded in the theory's own breakdown, not in a completed picture waiting to be found.
+
+\medskip
+
+\TODO{Extend paragraph on effective field theory (Weinberg, Wilson): EFTs explicitly embrace ontological incompleteness at each scale. That may be a more honest framing than ``the problem is unsolved.''}
